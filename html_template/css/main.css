@@ -1,7 +1,7 @@
 /* Main definitions */
 body {
 	background: #FFFFFF url("../images/globalBackground.png") repeat;
-	font: 80%/130% "Helvetica Neue", "Helvetica", "Arial";
+	font: 80%/130% "Open Sans", "Helvetica", "Arial";
 	margin: 0;
 	padding: 0;
 }
@@ -110,6 +110,10 @@ header {
 	
 }
 
+#topNav ul li:active:not(.active) a {
+	background: #61b2f8;
+}
+
 
 /* Slideshow */
 #slideshow {
@@ -167,7 +171,7 @@ header {
 }
 
 .box img {
-	margin-left: 40px;
+	margin: -20px 40px;
 }
 
 .box p {
