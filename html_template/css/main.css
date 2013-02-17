@@ -1,4 +1,99 @@
+/* Main definitions */
 body {
 	background: #FFFFFF url("../images/globalBackground.png") repeat;
 	font: 80%/130% "Helvetica Neue", "Helvetica", "Arial";
+}
+
+
+/* Root container */
+#container {
+	width: 1000px;
+	height: auto;
+	min-height: 400px;
+	margin: 0 auto;
+	border: 1px dotted #f00;
+}
+
+
+/* Socials bar (Facebook & Twitter) */
+#socials {
+	position: absolute;
+	right: 5px;
+	top: 5px;
+}
+
+
+/* Header definitions */
+header {
+	
+}
+
+#logo {
+	
+}
+
+#topNav {
+	
+}
+
+
+/* Slideshow */
+#slideshow {
+	
+}
+
+#slideshow img {
+	
+}
+
+/* Content definitions */
+#content {
+	
+}
+
+#content p {
+	
+}
+
+
+/* Feature box */
+.box {
+	
+}
+
+.box .topLine {
+	
+}
+
+.box .topLine .mark {
+	
+}
+
+.box h1 {
+	
+}
+
+.box img {
+	
+}
+
+.box p {
+	
+}
+
+
+/* Footer */
+footer {
+	
+}
+
+footer p {
+	
+}
+
+
+/* Helper */
+.clear {
+	float: none;
+	clear: both;
 }
