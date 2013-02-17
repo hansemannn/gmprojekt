@@ -1,7 +1,7 @@
 /* Main definitions */
 body {
 	background: #FFFFFF url("../images/globalBackground.png") repeat;
-	font: 80%/130% "Open Sans", "Helvetica", "Arial";
+	font: 80%/130% "Open Sans", "Times", "Arial";
 	margin: 0;
 	padding: 0;
 }
@@ -35,7 +35,7 @@ a {
 #socials {
 	position: absolute;
 	right: 10px;
-	top: 0px;
+	top: 10px;
 }
 
 #socials ul li { 
@@ -69,6 +69,7 @@ header {
 	background: url("../images/logo.png") no-repeat;
 	width: 201px;
 	height: 89px;
+	display: none;
 	margin: 10px 0 0 10px;
 }
 
@@ -123,22 +124,11 @@ header {
 
 
 /* Slideshow */
-.imageContainer {
-  width: 100%;
+#slideshow {
   height: 357px;
-  overflow: hidden;
-  position: relative;
-	border-top: 6px solid #dedede;
-	border-bottom: 6px solid #dedede;
 }
-.imageCenterer {
-  position: absolute;
-  left: 50%;
-  top: 0;
-  margin-left: -500px;
-}
-.imageCenterer img {
-  display: block;
+
+#slideshow img {
   margin: 0 auto;
 }
 
@@ -147,21 +137,23 @@ header {
 	margin: 40px 0;
 }
 
-#content p {
-	
-}
+#content p { }
 
 
 /* Feature box */
 .box {
 	float: left;
-	margin-right: 22px;
+	margin-right: 28px;
 	width: 310px;
 	height: 465px;
 	background: rgba(255,255,255, 0.5);
 	border-bottom-right-radius: 10px;
 	border-bottom-left-radius: 10px;
 	box-shadow: 0 0 10px #ddd;
+}
+
+.last {
+	margin-right: 0;
 }
 
 .box .topLine {
