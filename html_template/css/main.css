@@ -1,7 +1,7 @@
 /* Main definitions */
 body {
 	background: #FFFFFF url("../images/globalBackground.png") repeat;
-	font: 80%/130% "Open Sans", "Times", "Arial";
+	font-family: "HelveticaNeueLTLight", "Helvetica Neue", "Helvetica", "Arial"!important;
 	margin: 0;
 	padding: 0;
 }
