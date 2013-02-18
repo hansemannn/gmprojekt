@@ -1,0 +1,9 @@
+@media (max-width: 480px) {
+	#logo {
+		margin-left: 65px;
+	}
+	
+	.box {
+		margin-left: 20px;
+	}
+}

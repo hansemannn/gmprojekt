@@ -77,8 +77,7 @@ header {
 	margin: 10px 0 0 10px;
 }
 
-
-/* Main navigation */
+/* Main desktop-navigation */
 #topNav {
 	float: right;
 }
@@ -127,9 +126,14 @@ header {
 }
 
 
+/* Main mobile-navigation */
+#mobileNav select {
+	margin: 20px 60px;
+}
+
 /* Slideshow */
 #slideshow {
-  height: 357px;
+  max-height: 357px;
 }
 
 #slideshow img {
@@ -155,16 +159,10 @@ header {
 	border-bottom-right-radius: 10px;
 	border-bottom-left-radius: 10px;
 	box-shadow: 0 0 10px #ddd;
-
-	opacity: 0.7;
-   transition: opacity .25s ease-in-out;
-   -moz-transition: opacity .25s ease-in-out;
-   -webkit-transition: opacity .25s ease-in-out;
-
 }
 
 .box:hover {
-	opacity: 1;
+	box-shadow: 0 0 10px #aaa;
 }
 
 .last {
