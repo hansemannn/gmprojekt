@@ -69,9 +69,11 @@ header {
 }
 
 #logo {
+	display: block;
 	float: left;
 	background: url("../images/logo.png") no-repeat;
 	width: 201px;
+	text-indent: -9999px;
 	height: 89px;
 	display: none;
 	margin: 10px 0 0 10px;
@@ -183,8 +185,25 @@ header {
 	font-size: 25px;
 }
 
-.box img {
-	margin: -20px 40px;
+.box i {
+	font-size: 180px;
+	color: #c8c8cb;
+	text-shadow: 0 -1px #888;
+-webkit-mask-image: -webkit-gradient(linear, left top,
+    left bottom, from(rgba(184, 184, 188, 0.3)), to(rgba(0,0,0,1)));
+}
+
+.box .flex {
+	margin: -20px 60px;
+}
+
+.box .function {
+	margin: -20px 60px;
+	font-size: 180px;
+}
+
+.box .design {
+	margin: -20px 95px;
 }
 
 .box p {
