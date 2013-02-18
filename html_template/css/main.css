@@ -2,8 +2,8 @@
 body {
 	background: #FFFFFF url("../images/globalBackground.png") repeat;
 	font-family: "HelveticaNeueLTLight", "Helvetica Neue", "Helvetica", "Arial"!important;
-	margin: 0;
-	padding: 0;
+	margin: 0!important;
+	padding: 0!important;
 }
 
 ::selection {
@@ -126,11 +126,6 @@ header {
 }
 
 
-/* Main mobile-navigation */
-#mobileNav select {
-	margin: 20px 60px;
-}
-
 /* Slideshow */
 #slideshow {
   max-height: 357px;
@@ -154,7 +149,6 @@ header {
 	margin-right: 30px;
 	margin-bottom: 30px;
 	width: 310px;
-	height: 465px;
 	background: rgba(255,255,255, 0.5);
 	border-bottom-right-radius: 10px;
 	border-bottom-left-radius: 10px;

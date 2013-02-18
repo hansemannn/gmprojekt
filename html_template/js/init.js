@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	$("#logo").fadeIn(750);
-	$('.dropdown-toggle').dropdown()
+
 });
 
 // Responsive Keyboard Shortcuts DEMO
