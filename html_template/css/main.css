@@ -24,7 +24,7 @@ a {
 
 /* Root container */
 #container {
-	width: 1000px;
+	max-width: 1000px;
 	height: auto;
 	min-height: 400px;
 	margin: 0 auto;
@@ -44,18 +44,22 @@ a {
 	float: right;
 }
 
-#socials ul li.facebook { 
-	background: url("../images/icons/facebookIcon.png");
-	margin-left: 10px;
-}
-
-#socials ul li.twitter { 
-	background: url("../images/icons/twitterIcon.png");
+.icon-facebook-sign, .icon-twitter-sign {
+	font-size: 30px;
+	color: #666;
 }
 
 #socials ul li a {
 	display: block;
-	text-indent: -9999px;
+	text-decoration: none;
+}
+
+#socials ul li a:hover i.icon-twitter-sign{
+	color: #9AE4E8;
+}
+
+#socials ul li a:hover i.icon-facebook-sign{
+	color: #304890;
 }
 
 
@@ -143,13 +147,24 @@ header {
 /* Feature box */
 .box {
 	float: left;
-	margin-right: 28px;
+	margin-right: 30px;
+	margin-bottom: 30px;
 	width: 310px;
 	height: 465px;
 	background: rgba(255,255,255, 0.5);
 	border-bottom-right-radius: 10px;
 	border-bottom-left-radius: 10px;
 	box-shadow: 0 0 10px #ddd;
+
+	opacity: 0.7;
+   transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+
+}
+
+.box:hover {
+	opacity: 1;
 }
 
 .last {
