@@ -2,8 +2,7 @@
 body {
 	background: #FFFFFF url("../images/globalBackground.png") repeat;
 	font-family: "HelveticaNeueLTLight", "Helvetica Neue", "Helvetica", "Arial"!important;
-	margin: 0!important;
-	padding: 0!important;
+	margin: 0;
 }
 
 ::selection {
@@ -64,77 +63,94 @@ a {
 
 
 /* Header definitions */
-headerÊ{
+headerï¿½{
 	height: 125px;
 }
 
-#logo {
-	display: block;
-	float: left;
-	background: url("../images/logo.png") no-repeat;
-	width: 201px;
-	text-indent: -9999px;
-	height: 89px;
-	display: none;
-	margin: 10px 0 0 10px;
+
+/**
+ * Bootstrap overrides
+ */
+ 
+.navbar .brand {
+    width: 201px;
+    height: 60px;
+    padding: 0;
 }
 
-/* Main desktop-navigation */
-#topNav {
-	float: right;
+.navbar .brand img {
+    height: 50px;
+    padding: 5px 0;
+}
+ 
+ .navbar-static-top .navbar-inner {
+     background-color: transparent;
+     background-image: none;
+     border-bottom: 7px solid #dedede;
+     -webkit-box-shadow: none;
+     box-shadow: none;
+     min-height: 60px;
+}
+ 
+ .navbar .nav > li > a {
+     padding: 15px 15px 15px;
+     font-size: 25px;
+     line-height: 30px;
+ }
+ 
+.navbar .nav > li > a:focus,
+.navbar .nav > li > a:hover {
+    color: #1982c4;
+    text-decoration: none;
+    background-color: transparent;
 }
 
-#topNav ul {
-	height: 50px;
-	margin-top: 30px;
-	margin-bottom: 30px;
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:hover,
+.navbar .nav > .active > a:focus {
+    color: #1982c4;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+ }
+ 
+ .navbar .btn-navbar {
+     border: 0;
+     background-image: none;
+     background-color: rgba(255, 255, 255, 0.5);
+     box-shadow: 0 0 10px #ddd;
+     margin-top: 10px;
+     border-radius: 3px;
+ }
+ 
+ .navbar .btn-navbar .icon-bar {
+     background-color: #1982c4;
+     width: 30px;
+     height: 4px;
+ }
+ 
+.navbar .btn-navbar:hover,
+.navbar .btn-navbar:focus,
+.navbar .btn-navbar:active,
+.navbar .btn-navbar.active,
+.navbar .btn-navbar.disabled,
+.navbar .btn-navbar[disabled] {
+    box-shadow: 0 0 10px #aaa;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
-#topNav ul li {
-	float: left;
-	height: 50px;
+.btn-navbar .icon-bar + .icon-bar {
+    margin-top: 6px;
 }
 
-#topNav ul li.active {
-	background: #1982c4;
+.hero-unit {
+    padding: 0;
+    overflow: hidden;
+    border-radius: 0;
 }
 
-#topNav ul li.active a {
-	color: #fff;	
-}
-
-#topNav ul li:hover:not(.active) {
-	background: #001f53;
-}
-
-
-#topNav ul li:hover a {
-	color: #fff;
-}
-
-#topNav ul li a {
-	text-decoration: none;
-	padding: 15px;
-	line-height: 50px;
-	font-size: 25px;
-}
-
-#topNav ul li a:hover {
-	
-}
-
-#topNav ul li:active:not(.active) a {
-	background: #61b2f8;
-}
-
-
-/* Slideshow */
-#slideshow {
-  max-height: 357px;
-}
-
-#slideshow img {
-  margin: 0 auto;
+.hero-unit img {
+    width: 1920px;
 }
 
 /* Content definitions */
@@ -147,14 +163,11 @@ headerÊ{
 
 /* Feature box */
 .box {
-	float: left;
-	margin-right: 30px;
-	margin-bottom: 30px;
-	width: 310px;
-	background: rgba(255,255,255, 0.5);
-	border-bottom-right-radius: 10px;
-	border-bottom-left-radius: 10px;
-	box-shadow: 0 0 10px #ddd;
+    background: rgba(255,255,255, 0.5);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0 0 10px #ddd;
+    margin-bottom: 30px;
 }
 
 .box:hover {
@@ -185,25 +198,16 @@ headerÊ{
 	font-size: 25px;
 }
 
+.box .center {
+    text-align: center;
+}
+
 .box i {
-	font-size: 180px;
-	color: #c8c8cb;
-	text-shadow: 0 -1px #888;
--webkit-mask-image: -webkit-gradient(linear, left top,
-    left bottom, from(rgba(184, 184, 188, 0.3)), to(rgba(0,0,0,1)));
-}
-
-.box .flex {
-	margin: -20px 60px;
-}
-
-.box .function {
-	margin: -20px 60px;
-	font-size: 180px;
-}
-
-.box .design {
-	margin: -20px 95px;
+    margin: 0 auto;
+    font-size: 150px;
+    color: #c8c8cb;
+    text-shadow: 0 -1px #888;
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(184, 184, 188, 0.3)), to(rgba(0,0,0,1)));
 }
 
 .box p {
@@ -244,8 +248,36 @@ footer a:hover {
 	color: #fff;
 }
 
-/* Helper */
-.clear {
-	float: none;
-	clear: both;
+@media (min-width: 980px) {
+    .navbar .nav {
+        height: 60px;
+    }
+    
+     .navbar-static-top .navbar-inner {
+        border-bottom: 7px solid #dedede;
+     }
+     
+     .navbar .nav > .active {
+        border-bottom: 7px solid #1982c4;
+    }
+}
+
+@media (max-width: 979px) {
+    .nav-collapse .nav > li > a {
+        font-weight: normal;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero-unit {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+    
+    footer {
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }

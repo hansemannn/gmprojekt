@@ -1,111 +1,110 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Responsive Design | Home</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" type="text/css" href="css/fonts.css" />
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <link rel="stylesheet" type="text/css" href="css/mobile.css" />
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.min.css" />
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    
-    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/mousetrap.min.js"></script>
-    <script src="js/init.js"></script>
-    <meta charset="utf-8">
-</head>
-<body>
+    <head>
+        <title>Responsive Design | Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/fonts.css" />
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <link rel="stylesheet" href="css/font-awesome.min.css">
 
-<!-- Modal -->
-<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h3 id="myModalLabel">Facebook</h3>
-  </div>
-  <div class="modal-body">
-    <p>Coole Facebook-Infos!</p>
-  </div>
-  <div class="modal-footer">
-    <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">OK</button>
-  </div>
-</div>
-	<nav id="socials">
-		<ul>
-			<li><a href="#" data-toggle="modal" data-target="#myModal"> <i class="icon-facebook-sign"></i></a></li>
-			<li><a href="#"> <i class="icon-twitter-sign"></i></a></li>
-		</ul>
-		<div class="clear"></div>
-	</nav>
-    <div id="container">
-	    <header>
-		    <a href="#" id="logo">Responsive Design - Ein Projekt an der Hochschule Osnabrück</a>
-		    <nav id="topNav" class="hidden-phone">
-			    <ul>
-			    	<li class="active"><a href="#">Home</a></li>
-			    	<li><a href="#">Infos</a></li>
-			    	<li><a href="#">Statistiken</a></li>
-			    	<li><a href="#">Beispiele</a></li>
-			    </ul>
-			    <div class="clear"></div>
-		    </nav>
-		    
-			<nav id="mobileNav" class="visible-phone">
-				<select>
-					<option>Home</option>
-					<option>Infos</option>
-					<option>Statistiken</option>
-					<option>Beispiele</option>
-				</select>
-			</nav>
-		    <div class="clear"></div>
-	    </header>
-	    <section id="slideshow">
-		  	<img src="images/slideshowDummy.jpg" alt="Slideshow" class="" />
-	    </section>
-	    <section id="content">
-	    	<p>
-			    <div class="box">
-				    <div class="topLine">
-					    <span class="mark"></span>
-				    </div>
-				    <h1>Flexibilität</h1>
-				    <i class="icon-th flex"></i>
-				    <p>
-					    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et 
-				    </p>
-			    </div>
-			    <div class="box">
-				    <div class="topLine">
-					    <span class="mark"></span>
-				    </div>
-				    <h1>Design</h1>
-				    <i class="icon-tint design"></i>
-				    <p>
-					    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et 
-				    </p>
-			    </div>
-			    <div class="box last">
-				    <div class="topLine">
-					    <span class="mark"></span>
-				    </div>
-				    <h1>Funktion</h1>
-				    <i class="icon-cogs function"></i>
-				    <p>
-					    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et 
-				    </p>
-			    </div>
-			    
-			    <div class="clear"></div>
-	    	</p>
-	    </section>
-    </div>
-	<footer>
-		<p>
-	    	Copyright © 2013 Responsive Design<br />
-	    	<a href="#">Impressum</a>
-	    </p>
-    </footer>
-</body>
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/mousetrap.min.js"></script>
+        <script src="js/init.js"></script>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div class="navbar navbar-static-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <button type="button" class="btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#" class="brand">
+                        <img src="images/logo.png">
+                    </a>
+                    
+                    <div class="nav-collapse collapse">
+                        <ul class="nav pull-right">
+                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="#">Statistiken</a></li>
+                            <li><a href="#">Beispiele</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-unit">
+            <img src="images/slide.jpg" alt="Slideshow" class="" />
+        </div>
+        
+        <div class="container">
+            <div class="row">
+                <div class="box span4">
+                    <div class="topLine">
+                        <span class="mark"></span>
+                    </div>
+                    <h1>Flexibilität</h1>
+                    <div class="center">
+                        <i class="icon-th flex"></i>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                    </p>
+                </div>
+                
+                <div class="box span4">
+                    <div class="topLine">
+                        <span class="mark"></span>
+                    </div>
+                    <h1>Design</h1>
+                    <div class="center">
+                        <i class="icon-tint design"></i>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                    </p>
+                </div>
+                
+                <div class="box span4">
+                    <div class="topLine">
+                        <span class="mark"></span>
+                    </div>
+                    <h1>Funktion</h1>
+                    <div class="center">
+                    <i class="icon-cogs function"></i>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>
+                Copyright © 2013 Responsive Design<br />
+                <a href="#">Impressum</a>
+            </p>
+        </footer>
+
+        <!-- Modal -->
+        <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3 id="myModalLabel">Facebook</h3>
+          </div>
+          <div class="modal-body">
+            <p>Coole Facebook-Infos!</p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">OK</button>
+            </div>
+        </div>
+    </body>
 </html>
