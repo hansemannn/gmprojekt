@@ -37,7 +37,7 @@ a {
 	top: 10px;
 }
 
-#socials ul li { 
+#socials ul li {
 	width: 30px;
 	height: 30px;
 	float: right;
@@ -71,7 +71,7 @@ header�{
 /**
  * Bootstrap overrides
  */
- 
+
 .navbar .brand {
     width: 201px;
     height: 60px;
@@ -82,7 +82,7 @@ header�{
     height: 50px;
     padding: 5px 0;
 }
- 
+
  .navbar-static-top .navbar-inner {
      background-color: transparent;
      background-image: none;
@@ -91,13 +91,13 @@ header�{
      box-shadow: none;
      min-height: 60px;
 }
- 
+
  .navbar .nav > li > a {
      padding: 15px 15px 15px;
      font-size: 25px;
      line-height: 30px;
  }
- 
+
 .navbar .nav > li > a:focus,
 .navbar .nav > li > a:hover {
     color: #1982c4;
@@ -113,7 +113,7 @@ header�{
     -webkit-box-shadow: none;
     box-shadow: none;
  }
- 
+
  .navbar .btn-navbar {
      border: 0;
      background-image: none;
@@ -122,13 +122,13 @@ header�{
      margin-top: 10px;
      border-radius: 3px;
  }
- 
+
  .navbar .btn-navbar .icon-bar {
      background-color: #1982c4;
      width: 30px;
      height: 4px;
  }
- 
+
 .navbar .btn-navbar:hover,
 .navbar .btn-navbar:focus,
 .navbar .btn-navbar:active,
@@ -141,16 +141,6 @@ header�{
 
 .btn-navbar .icon-bar + .icon-bar {
     margin-top: 6px;
-}
-
-.hero-unit {
-    padding: 0;
-    overflow: hidden;
-    border-radius: 0;
-}
-
-.hero-unit img {
-    width: 1920px;
 }
 
 /* Content definitions */
@@ -248,15 +238,41 @@ footer a:hover {
 	color: #fff;
 }
 
+/**
+ * LayerSlider
+ */
+.ls-layer p {
+    padding: 20px;
+    line-height: 25px;
+    box-shadow: 0px 4px 10px -5px black;
+    text-shadow: none;
+    font-size: 18px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+
+.l1-s2 {
+    height: 75px;
+    color: white;
+    background: #333333;
+    opacity: .9;
+    width: 350px;
+}
+
+/**
+ * Twitter Bootstrap Responsive ovverides
+ */
+
 @media (min-width: 980px) {
     .navbar .nav {
         height: 60px;
     }
-    
+
      .navbar-static-top .navbar-inner {
         border-bottom: 7px solid #dedede;
      }
-     
+
      .navbar .nav > .active {
         border-bottom: 7px solid #1982c4;
     }
@@ -269,11 +285,11 @@ footer a:hover {
 }
 
 @media (max-width: 767px) {
-    .hero-unit {
+    #layerslider-container-fw {
         margin-left: -20px;
         margin-right: -20px;
     }
-    
+
     footer {
         margin-left: -20px;
         margin-right: -20px;

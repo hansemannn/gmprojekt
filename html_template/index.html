@@ -2,17 +2,16 @@
 <html>
     <head>
         <title>Responsive Design | Home</title>
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
         <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.min.css" />
         <link rel="stylesheet" type="text/css" href="css/fonts.css" />
+        <link rel="stylesheet" type="text/css" href="layerslider/css/layerslider.css" />
         <link rel="stylesheet" type="text/css" href="css/main.css" />
         <link rel="stylesheet" href="css/font-awesome.min.css">
 
-        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/mousetrap.min.js"></script>
-        <script src="js/init.js"></script>
         <meta charset="utf-8">
     </head>
     <body>
@@ -27,7 +26,7 @@
                     <a href="#" class="brand">
                         <img src="images/logo.png">
                     </a>
-                    
+
                     <div class="nav-collapse collapse">
                         <ul class="nav pull-right">
                             <li class="active"><a href="#">Home</a></li>
@@ -38,11 +37,20 @@
                 </div>
             </div>
         </div>
-        
-        <div class="hero-unit">
-            <img src="images/slide.jpg" alt="Slideshow" class="" />
+
+        <div id="layerslider-container-fw">
+            <div id="layerslider" style="width: 100%; height: 525px; margin-bottom: 50px;">
+                <div class="ls-layer" style="slidedirection: top; slidedelay: 7000; durationin: 1500; durationout: 1500; delayout: 500;">
+                    <img src="images/slide.jpg" class="ls-bg" alt="layer1-background">
+
+                    <!--LayerSlider sublayers-->
+                    <img class="ls-s1" src="images/macbook.png" alt="sublayer" style="position: absolute; top:120px; left: 370px; slidedirection : bottom; durationin: 2300; easingin: easeOutElastic">
+                    <img class="ls-s2" src="images/rect1.png" alt="sublayer" style="position: absolute; top:240px; slidedirection : left; durationin: 2300; easingin: easeOutElastic">
+
+                </div>
+            </div>
         </div>
-        
+
         <div class="container">
             <div class="row">
                 <div class="box span4">
@@ -57,7 +65,7 @@
                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
                     </p>
                 </div>
-                
+
                 <div class="box span4">
                     <div class="topLine">
                         <span class="mark"></span>
@@ -70,7 +78,7 @@
                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
                     </p>
                 </div>
-                
+
                 <div class="box span4">
                     <div class="topLine">
                         <span class="mark"></span>
@@ -85,7 +93,7 @@
                 </div>
             </div>
         </div>
-        
+
         <footer>
             <p>
                 Copyright © 2013 Responsive Design<br />
@@ -106,5 +114,13 @@
             <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">OK</button>
             </div>
         </div>
+
+        <!-- Le JavaScript -->
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="js/jquery-easing-1.3.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/mousetrap.min.js"></script>
+        <script src="layerslider/js/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
+        <script src="js/init.js"></script>
     </body>
 </html>
