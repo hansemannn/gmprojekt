@@ -63,7 +63,7 @@ a {
 
 
 /* Header definitions */
-header�{
+header {
 	height: 125px;
 }
 
@@ -74,13 +74,13 @@ header�{
 
 .navbar .brand {
     width: 201px;
-    height: 60px;
+    height: 85px;
     padding: 0;
 }
 
 .navbar .brand img {
-    height: 50px;
-    padding: 5px 0;
+    height: 65px;
+    padding: 10px 0;
 }
 
  .navbar-static-top .navbar-inner {
@@ -95,7 +95,7 @@ header�{
  .navbar .nav > li > a {
      padding: 15px 15px 15px;
      font-size: 25px;
-     line-height: 30px;
+     line-height: 55px;
  }
 
 .navbar .nav > li > a:focus,
