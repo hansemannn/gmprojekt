@@ -148,6 +148,11 @@ header {
 	margin: 40px 0;
 }
 
+.ls-s1, .box {
+	-webkit-transition: all .2s ease-in-out;
+}
+.ls-s1:hover, .box:hover { -webkit-transform: scale(1.1); }
+
 #content p { }
 
 
@@ -157,7 +162,7 @@ header {
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     box-shadow: 0 0 10px #ddd;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .box:hover {
@@ -202,7 +207,7 @@ header {
 
 .box article {
 	text-align: justify;
-	padding: 0 25px;
+	padding: 0 25px 10px 25px;
 	line-height: 25px;
 	font-size: 16px;
 	color: #606060;
