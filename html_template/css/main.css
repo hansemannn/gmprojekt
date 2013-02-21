@@ -200,7 +200,7 @@ header {
     -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(184, 184, 188, 0.3)), to(rgba(0,0,0,1)));
 }
 
-.box p {
+.box article {
 	text-align: justify;
 	padding: 0 25px;
 	line-height: 25px;
