@@ -145,16 +145,25 @@ header {
 
 /* Content definitions */
 #content {
-	margin: 40px 0;
+	margin: 0 0 40px 0;
 }
+
+#content h1 {
+	font-size: 30px;
+}
+
+#content p { 
+	background: #fff;
+	height: auto;
+	padding: 20px;
+	box-shadow: 0 0 20px #d6d6d6;
+}
+
 
 .ls-s1, .box {
 	-webkit-transition: all .2s ease-in-out;
 }
 .ls-s1:hover, .box:hover { -webkit-transform: scale(1.1); }
-
-#content p { }
-
 
 /* Feature box */
 .box {
