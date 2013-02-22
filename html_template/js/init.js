@@ -19,7 +19,7 @@ $(document).ready(function() {
 	    thumbnailNavigation : 'hover',
 	    hoverPrevNext : false,
 	    responsive : false,
-	    responsiveUnder : 940,
-	    sublayerContainer : 900
+	    responsiveUnder : 1170,
+	    sublayerContainer : 1170
 	});
 });

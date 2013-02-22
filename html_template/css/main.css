@@ -1,7 +1,8 @@
 /* Main definitions */
 body {
 	background: #FFFFFF url("../images/globalBackground.png") repeat;
-	font-family: "HelveticaNeueLTLight", "Helvetica Neue", "Helvetica", "Arial"!important;
+	font-family: "HelveticaNeueLTLight", "Helvetica Neue", "Helvetica", "Arial" !important;
+    font-size: 15px;
 	margin: 0;
 }
 
@@ -69,13 +70,14 @@ header {
 
 
 /**
- * Bootstrap overrides
+ * Twitter Bootstrap overrides
  */
 
 .navbar .brand {
     width: 201px;
     height: 85px;
     padding: 0;
+    margin-left: 0px;
 }
 
 .navbar .brand img {
@@ -142,28 +144,6 @@ header {
 .btn-navbar .icon-bar + .icon-bar {
     margin-top: 6px;
 }
-
-/* Content definitions */
-#content {
-	margin: 0 0 40px 0;
-}
-
-#content h1 {
-	font-size: 30px;
-}
-
-#content p { 
-	background: #fff;
-	height: auto;
-	padding: 20px;
-	box-shadow: 0 0 20px #d6d6d6;
-}
-
-
-.ls-s1, .box {
-	-webkit-transition: all .2s ease-in-out;
-}
-.ls-s1:hover, .box:hover { -webkit-transform: scale(1.1); }
 
 /* Feature box */
 .box {
@@ -266,16 +246,8 @@ footer a:hover {
     -webkit-border-radius: 4px;
 }
 
-.l1-s2 {
-    height: 75px;
-    color: white;
-    background: #333333;
-    opacity: .9;
-    width: 350px;
-}
-
 /**
- * Twitter Bootstrap Responsive ovverides
+ * Twitter Bootstrap Responsive overrides
  */
 
 @media (min-width: 980px) {
@@ -299,7 +271,7 @@ footer a:hover {
 }
 
 @media (max-width: 767px) {
-    #layerslider-container-fw {
+    #layerslider {
         margin-left: -20px;
         margin-right: -20px;
     }
