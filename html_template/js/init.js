@@ -22,4 +22,7 @@ $(document).ready(function() {
 	    responsiveUnder : 1170,
 	    sublayerContainer : 1170
 	});
+
+	// make code pretty
+    window.prettyPrint && prettyPrint();
 });

@@ -145,6 +145,19 @@ header {
     margin-top: 6px;
 }
 
+section {
+    padding-top: 30px;
+}
+
+.thumbnail {
+    padding: 0;
+    border: none;
+}
+
+.thumbnail img {
+    box-shadow: 0 0 7px #888;
+}
+
 /* Feature box */
 .box {
     background: rgba(255,255,255, 0.5);
@@ -206,6 +219,7 @@ header {
 /* Footer */
 footer {
 	height: 114px;
+    margin-top: 70px;
 	border-top: 6px solid #dedede;
 	background: url("../images/footerBackground.png") repeat-x;
 }
@@ -282,4 +296,23 @@ footer a:hover {
         padding-left: 20px;
         padding-right: 20px;
     }
+}
+
+/**
+ * Examples
+ */
+
+.example-grid [class*="span"] {
+    background-color: #dedede;
+    text-align: center;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    min-height: 40px;
+    line-height: 40px;
+}
+
+.example-grid .row {
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
