@@ -30,7 +30,7 @@
                     <div class="nav-collapse collapse">
                         <ul class="nav pull-right">
                             <li><a href="index.html">Home</a></li>
-                            <li class="active"><a href="statistics.html">Statistiken</a></li>
+                            <li class="active"><a href="statistics.html">Informationen</a></li>
                             <li><a href="examples.html">Beispiele</a></li>
                         </ul>
                     </div>
@@ -39,16 +39,64 @@
         </div>
 
         <div class="container">
-            <section id="examples">
+            <section id="stats">
                 <div class="page-header">
-                    <h1>Statistiken</h1>
+                    <h1>Informationen</h1>
                 </div>
 
-                <h2>Hui, tolle Unterpunkte</h2>
+                <h2>Was ist Responsive Web Design</h2>
 
-                <p>
-                    Ganz tolle Statistiken
-                </p>
+                <div class="stats-1">
+                    <img src="images/grafik1.png">
+                    <p>
+                        Responsive Web Design ist ein ansatz...
+                    </p>
+                </div>
+
+                <h2>Features von Responsive Web Design</h2>
+
+                <div class="row feature-grid">
+                    <div class="span4">
+                        <img src="images/feature1.png">
+                        <p>Flexibles Grid-System</p>
+                    </div>
+                    <div class="span4">
+                        <img src="images/feature2.png"><br>
+                        <p>Flexible Bilder</p>
+                    </div>
+                    <div class="span4">
+                        <img src="images/feature3.png"><br>
+                        <p>CSS3 Media Queries</p>
+                    </div>
+                </div>
+
+                <h2>Vorteile von Responsive Web Design</h2>
+
+                <div class="row advantages-grid">
+                    <div class="span3">
+                        <img src="images/money.png">
+                        <p>Spart Geld</p>
+                    </div>
+                    <div class="span3">
+                        <img src="images/time.png">
+                        <p>Spart Zeit</p>
+                    </div>
+                    <div class="span3">
+                        <img src="images/dashboard.png">
+                        <p>Bessere Performance</p>
+                    </div>
+                    <div class="span3">
+                        <img src="images/globe.png">
+                        <p>Browser Support</p>
+                    </div>
+                </div>
+
+                <h2>Internetnutzung - Mobile Geräte vs. Desktop</h2>
+
+                <div class="row">
+                    <div class="span10 offset1">
+                        <div id="jqFlot" style="height: 525px;"></div>
+                    </div>
             </section>
         </div>
 
@@ -80,7 +128,33 @@
         <script src="js/jquery-easing-1.3.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/mousetrap.min.js"></script>
-        <script src="layerslider/js/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
-        <script src="js/init.js"></script>
+        <script src="js/jquery.flot.js"></script>
+        <script src="js/jquery.flot.resize.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                var d1 = [[2007, 1150], [2008, 1220], [2009, 1300], [2010, 1350], [2011, 1500], [2012, 1550], [2013, 1600], [2014, 1700], [2015, 1750]];
+                var d2 = [[2007, 400], [2008, 550], [2009, 750], [2010, 900], [2011, 1175], [2012, 1350], [2013, 1550], [2014, 1750], [2015, 2000]];
+
+                var plot = $.plot($("#jqFlot"),
+                    [
+                        {
+                            data: d1,
+                            label: "Dektop"
+                        }, {
+                            data: d2,
+                            label: "Mobile"
+                        }
+                    ], {
+                        series: {
+                            lines: { show: true },
+                            points: { show: true }
+                        },
+                        grid: {
+                            hoverable: true
+                        }
+                    }
+                );
+            });
+        </script>
     </body>
 </html>

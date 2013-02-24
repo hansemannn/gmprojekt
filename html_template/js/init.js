@@ -4,25 +4,25 @@ $(document).ready(function() {
 	// Responsive Keyboard Shortcuts DEMO
 	Mousetrap.bind('h', function() {
 		$("#logo").fadeOut(750);
-	 });
+	});
 
 	Mousetrap.bind('s', function() {
 		$("#logo").fadeIn(750);
-	 });
+	});
 
 	/**
 	 * LayerSlider
 	 */
 	$('#layerslider').layerSlider({
-	    skinsPath : 'layerslider/skins/',
-	    skin : 'fullwidth',
-	    thumbnailNavigation : 'hover',
-	    hoverPrevNext : false,
-	    responsive : false,
-	    responsiveUnder : 1170,
-	    sublayerContainer : 1170
+		skinsPath : 'layerslider/skins/',
+		skin : 'fullwidth',
+		thumbnailNavigation : 'hover',
+		hoverPrevNext : false,
+		responsive : false,
+		responsiveUnder : 1170,
+		sublayerContainer : 1170
 	});
 
 	// make code pretty
-    window.prettyPrint && prettyPrint();
+	window.prettyPrint && prettyPrint();
 });
