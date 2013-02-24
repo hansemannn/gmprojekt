@@ -91,7 +91,7 @@ header {
      border-bottom: 7px solid #dedede;
      -webkit-box-shadow: none;
      box-shadow: none;
-     min-height: 60px;
+     min-height: 85px;
 }
 
  .navbar .nav > li > a {
@@ -121,7 +121,7 @@ header {
      background-image: none;
      background-color: rgba(255, 255, 255, 0.5);
      box-shadow: 0 0 10px #ddd;
-     margin-top: 10px;
+     margin-top: 20px;
      border-radius: 3px;
  }
 
@@ -224,22 +224,30 @@ footer {
 	background: url("../images/footerBackground.png") repeat-x;
 }
 
-footer p, footer a {
-	color: #fff;
-	font-size: 16px;
-	text-align: center;
-}
-
 footer p {
-	margin-top: 35px;
-	color: #b3b3b3;
+    text-align: center;
+	color: #737373;
 	text-shadow: 0 -1px #000;
 }
 
+footer p.copyright {
+    margin-top: 35px;
+    font-size: 13px;
+}
+
 footer a {
-	display: block;
-	color: #e0e0e0;
+    color: #737373;
 	margin-top: 5px;
+    font-weight: bold;
+    transition: color 300ms;
+    -webkit-transition: color 300ms;
+    -moz-transition: color 300ms;
+    -o-transition: color 300ms;
+}
+
+footer a:hover {
+    color: #e0e0e0;
+    text-decoration: none;
 }
 
 footer a:hover {
@@ -266,7 +274,7 @@ footer a:hover {
 
 @media (min-width: 980px) {
     .navbar .nav {
-        height: 60px;
+        height: 85px;
     }
 
      .navbar-static-top .navbar-inner {
@@ -285,7 +293,7 @@ footer a:hover {
 }
 
 @media (max-width: 767px) {
-    #layerslider {
+    .ls-wp-fullwidth-container {
         margin-left: -20px;
         margin-right: -20px;
     }

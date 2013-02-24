@@ -234,3 +234,14 @@
 	left: 0px;
 	top: 0px;
 }
+
+/* WP plugin fullWidth */
+
+.ls-wp-fullwidth-container {
+	width: 100%;
+	position: relative;
+}
+
+.ls-wp-fullwidth-helper {
+	position: absolute;
+}
