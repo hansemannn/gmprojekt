@@ -158,13 +158,12 @@ section {
     padding-top: 40px;
 }
 
-section > .page-header, section > .lead {
-    color: #5a5a5a;
-}
-
 .thumbnail {
     padding: 0;
     border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
 }
 
 .thumbnail img {
@@ -172,7 +171,7 @@ section > .page-header, section > .lead {
 }
 
 .progress, .progress .bar {
-    border-radius: 0px;
+    border-radius: 0;
 }
 
 .progress .bar {
@@ -329,6 +328,10 @@ footer a:hover {
 /**
  * Examples
  */
+
+.example h2 {
+    color: #5a5a5a;
+}
 
 .example-grid [class*="span"] {
     background-color: #dedede;

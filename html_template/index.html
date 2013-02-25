@@ -136,6 +136,21 @@
         <script src="js/mousetrap.min.js"></script>
         <script src="layerslider/js/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
         <script src="js/retina.js"></script>
-        <script src="js/init.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                /**
+                 * LayerSlider
+                 */
+                $('#layerslider').layerSlider({
+                    skinsPath : 'layerslider/skins/',
+                    skin : 'fullwidth',
+                    thumbnailNavigation : 'hover',
+                    hoverPrevNext : false,
+                    responsive : false,
+                    responsiveUnder : 1170,
+                    sublayerContainer : 1170
+                });
+            });
+        </script>
     </body>
 </html>
