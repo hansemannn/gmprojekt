@@ -338,6 +338,25 @@ footer a:hover {
  * Stats & Infos
  */
 
+.information {
+    text-align: center;
+}
+
+.information h1 {
+    margin: 60px 0 10px;
+    font-size: 60px;
+    font-weight: 200;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+.information > p {
+    margin-bottom: 40px;
+    font-size: 20px;
+    line-height: 1.25;
+    color: #999;
+}
+
 .stats-1 img {
     max-width: 100%;
 }
@@ -350,3 +369,31 @@ footer a:hover {
     margin-top: 20px;
     font-size: 22px;
 }
+
+.feature-grid i, .advantages-grid i {
+    font-size: 180px;
+    color: #c8c8c8;
+}
+
+.usage-grid {
+    text-align: left;
+}
+
+.usage-grid .bar-container {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.usage-grid .bar-container i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 40px;
+    width: 48px;
+}
+
+.usage-grid .bar-container p, .usage-grid .bar-container .progress {
+    margin-left: 60px;
+}
+
+

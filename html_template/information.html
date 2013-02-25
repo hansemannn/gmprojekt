@@ -30,7 +30,7 @@
                     <div class="nav-collapse collapse">
                         <ul class="nav pull-right">
                             <li><a href="index.html">Home</a></li>
-                            <li class="active"><a href="statistics.html">Informationen</a></li>
+                            <li class="active"><a href="information.html">Informationen</a></li>
                             <li><a href="examples.html">Beispiele</a></li>
                         </ul>
                     </div>
@@ -39,25 +39,20 @@
         </div>
 
         <div class="container">
-            <section id="stats">
-                <div class="page-header">
-                    <h1>Informationen</h1>
-                </div>
-
-                <h2>Was ist Responsive Web Design</h2>
-
+            <div class="information">
+                <h1>Was ist Responsive Web Design</h1>
+                <p>
+                    Responsive Web Design ist ein ansatz...
+                </p>
                 <div class="stats-1">
                     <img src="images/grafik1.png">
-                    <p>
-                        Responsive Web Design ist ein ansatz...
-                    </p>
                 </div>
 
-                <h2>Features von Responsive Web Design</h2>
-
+                <h1>Features von Responsive Web Design</h1>
+                <p>Die wichtigsten Features im &Uuml;berblick</p>
                 <div class="row feature-grid">
                     <div class="span4">
-                        <img src="images/feature1.png">
+                        <i class="icon-th"></i>
                         <p>Flexibles Grid-System</p>
                     </div>
                     <div class="span4">
@@ -70,34 +65,76 @@
                     </div>
                 </div>
 
-                <h2>Vorteile von Responsive Web Design</h2>
-
+                <h1>Vorteile von Responsive Web Design</h1>
+                <p></p>
                 <div class="row advantages-grid">
                     <div class="span3">
-                        <img src="images/money.png">
+                        <i class="icon-money"></i>
                         <p>Spart Geld</p>
                     </div>
                     <div class="span3">
-                        <img src="images/time.png">
+                        <i class="icon-time"></i>
                         <p>Spart Zeit</p>
                     </div>
                     <div class="span3">
-                        <img src="images/dashboard.png">
+                        <i class="icon-dashboard"></i>
                         <p>Bessere Performance</p>
                     </div>
                     <div class="span3">
-                        <img src="images/globe.png">
+                        <i class="icon-globe"></i>
                         <p>Browser Support</p>
                     </div>
                 </div>
 
-                <h2>Internetnutzung - Mobile Geräte vs. Desktop</h2>
+                <h1>Nutzung von mobilen Geräten</h1>
+                <p></p>
+                <div class="row usage-grid">
+                    <div class="span8">
+                        Toller Text den Kevin noch schreibt
+                    </div>
+                    <div class="span4">
+                        <div class="bar-container">
+                            <i class="icon-globe"></i>
+                            <p>Im Internet surfen</p>
+                            <div id="surf-web" class="progress">
+                                <div class="bar">81%</div>
+                            </div>
+                        </div>
 
+                        <div class="bar-container">
+                            <i class="icon-shopping-cart"></i>
+                            <p>Online-Shopping</p>
+                            <div id="shop-online" class="progress">
+                                <div class="bar">67%</div>
+                            </div>
+                        </div>
+
+                        <div class="bar-container">
+                            <i class="icon-bar-chart"></i>
+                            <p>Finazen regeln</p>
+                            <div id="manage-finances" class="progress">
+                                <div class="bar">46%</div>
+                            </div>
+                        </div>
+
+                        <div class="bar-container">
+                            <i class="icon-plane"></i>
+                            <p>Urlaub planen</p>
+                            <div id="plan-trip" class="progress">
+                                <div class="bar">43%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h1>Internetnutzung - Mobile Geräte vs. Desktop</h1>
+                <p></p>
                 <div class="row">
                     <div class="span10 offset1">
                         <div id="jqFlot" style="height: 525px;"></div>
                     </div>
-            </section>
+                </div>
+            </div>
         </div>
 
         <footer>
@@ -128,11 +165,28 @@
         <script src="js/jquery-easing-1.3.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/mousetrap.min.js"></script>
+        <script src="js/jquery.appear.js"></script>
         <script src="js/jquery.flot.js"></script>
         <script src="js/jquery.flot.resize.js"></script>
         <script src="js/retina.js"></script>
         <script type="text/javascript">
             $(document).ready(function() {
+                $(".usage-grid .span4").appear(function() {
+                    $(this).find("#surf-web .bar").animate({
+                        width: "81%"
+                    });
+                    $(this).find("#shop-online .bar").animate({
+                        width: "67%"
+                    });
+                    $(this).find("#manage-finances .bar").animate({
+                        width: "46%"
+                    });
+                    $(this).find("#plan-trip .bar").animate({
+                        width: "43%"
+                    });
+                });
+
+
                 var d1 = [[2007, 1150], [2008, 1220], [2009, 1300], [2010, 1350], [2011, 1500], [2012, 1550], [2013, 1600], [2014, 1700], [2015, 1750]];
                 var d2 = [[2007, 400], [2008, 550], [2009, 750], [2010, 900], [2011, 1175], [2012, 1350], [2013, 1550], [2014, 1750], [2015, 2000]];
 
