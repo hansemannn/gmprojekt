@@ -40,12 +40,35 @@
 
         <div class="container">
             <div class="information">
-                <h1>Was ist Responsive Web Design</h1>
+                <h1>Was ist Responsive Web Design?</h1>
                 <p>
-                    Responsive Web Design ist ein ansatz...
+                    Responsive Web Design ist ein Ansatz der besagt, dass Design und Entwicklung auf das Verhalten des Benutzters reagieren sollen. Und das unabhängig vom der verwendeten Bildschirmgröße.
                 </p>
                 <div class="stats-1">
+<<<<<<< HEAD
                     <img src="images/grafik1.png" alt="Stat1" />
+=======
+                    <img src="images/grafik1.png">
+                    <!--
+                    <div class="row">
+                        <div class="span2 offset1">
+                            Eine URL
+                        </div>
+                        <div class="span2">
+                            Eine Content-Basis
+                        </div>
+                        <div class="span2">
+                            Eine Code-Basis
+                        </div>
+                        <div class="span2">
+                            CSS3 Media Queries
+                        </div>
+                        <div class="span2">
+                            Mehrere Geräte
+                        </div>
+                    </div>
+                    -->
+>>>>>>> Weitere Infos + Design anpassungen
                 </div>
 
                 <h1>Features von Responsive Web Design</h1>
@@ -65,34 +88,33 @@
                     </div>
                 </div>
 
-                <h1>Vorteile von Responsive Web Design</h1>
+                <h1>Internetnutzung - Mobile Geräte vs. Desktop</h1>
                 <p></p>
-                <div class="row advantages-grid">
-                    <div class="span3">
-                        <i class="icon-money"></i>
-                        <p>Spart Geld</p>
+                <div class="mobilevsdesktop-grid">
+                    <div class="row">
+                        <div class="span4 offset2 legend">
+                            <i class="icon-desktop"></i> <span>Desktop</span>
+                        </div>
+                        <div class="span4 legend">
+                            <i class="icon-mobile-phone"></i> <span>Mobile Geräte</span>
+                        </div>
                     </div>
-                    <div class="span3">
-                        <i class="icon-time"></i>
-                        <p>Spart Zeit</p>
-                    </div>
-                    <div class="span3">
-                        <i class="icon-dashboard"></i>
-                        <p>Bessere Performance</p>
-                    </div>
-                    <div class="span3">
-                        <i class="icon-globe"></i>
-                        <p>Browser Support</p>
+                    <div class="row">
+                        <div class="span6 chart">
+                            <div class="chart-year">2009</div>
+                            <img src="images/desk_mob_1.png" />
+                        </div>
+                        <div class="span6 chart">
+                            <div class="chart-year">2015</div>
+                            <img src="images/desk_mob_2.png" />
+                        </div>
                     </div>
                 </div>
 
                 <h1>Nutzung von mobilen Geräten</h1>
-                <p></p>
+                <p>Was machen die Benutzer von mobilen Geräten am häufigsten</p>
                 <div class="row usage-grid">
-                    <div class="span8">
-                        Toller Text den Kevin noch schreibt
-                    </div>
-                    <div class="span4">
+                    <div class="span8 offset2">
                         <div class="bar-container">
                             <i class="icon-globe"></i>
                             <p>Im Internet surfen</p>
@@ -111,7 +133,7 @@
 
                         <div class="bar-container">
                             <i class="icon-bar-chart"></i>
-                            <p>Finazen regeln</p>
+                            <p>Finanzen regeln</p>
                             <div id="manage-finances" class="progress">
                                 <div class="bar">46%</div>
                             </div>
@@ -127,11 +149,24 @@
                     </div>
                 </div>
 
-                <h1>Internetnutzung - Mobile Geräte vs. Desktop</h1>
-                <p></p>
-                <div class="row">
-                    <div class="span10 offset1">
-                        <div id="jqFlot" style="height: 525px;"></div>
+                <h1>Vorteile von Responsive Web Design</h1>
+                <p>Nur einige der vielen Vorteile</p>
+                <div class="row advantages-grid">
+                    <div class="span3">
+                        <i class="icon-money"></i>
+                        <p>Spart Geld</p>
+                    </div>
+                    <div class="span3">
+                        <i class="icon-time"></i>
+                        <p>Spart Zeit</p>
+                    </div>
+                    <div class="span3">
+                        <i class="icon-dashboard"></i>
+                        <p>Bessere Performance</p>
+                    </div>
+                    <div class="span3">
+                        <i class="icon-globe"></i>
+                        <p>Umfangreicher Browser Support</p>
                     </div>
                 </div>
             </div>
@@ -171,7 +206,7 @@
         <script src="js/retina.js"></script>
         <script type="text/javascript">
             $(document).ready(function() {
-                $(".usage-grid .span4").appear(function() {
+                $(".usage-grid .span8").appear(function() {
                     $(this).find("#surf-web .bar").animate({
                         width: "81%"
                     });
@@ -186,7 +221,7 @@
                     });
                 });
 
-
+                /*
                 var d1 = [[2007, 1150], [2008, 1220], [2009, 1300], [2010, 1350], [2011, 1500], [2012, 1550], [2013, 1600], [2014, 1700], [2015, 1750]];
                 var d2 = [[2007, 400], [2008, 550], [2009, 750], [2010, 900], [2011, 1175], [2012, 1350], [2013, 1550], [2014, 1750], [2015, 2000]];
 
@@ -209,6 +244,7 @@
                         }
                     }
                 );
+                */
             });
         </script>
     </body>
